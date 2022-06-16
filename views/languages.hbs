@@ -1,0 +1,17 @@
+<div id='languagesList'>
+  {{#each data}}
+    {{#each this}}
+      {{#if code}}
+        <div class='card' style='width: 18rem;'>
+          <div class='card-body'>
+            <h5 class='card-title'>{{code}}</h5>
+            <h6 class='card-subtitle mb-2 text-muted'>{{code}}</h6>
+            <p class='card-text'>Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit. Alias, quibusdam!</p>
+            <a href='/languages/{{code}}' class='card-link'>Start learning</a>
+          </div>
+        </div>
+      {{/if}}
+    {{/each}}
+  {{/each}}
+</div>

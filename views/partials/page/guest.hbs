@@ -1,0 +1,175 @@
+<button
+  class='btn btn-outline-primary ml-2'
+  data-bs-toggle='modal'
+  href='#loginModal'
+  type='button'
+>Sign in</button>
+<button
+  class='btn btn-outline-primary ml-2'
+  data-bs-toggle='modal'
+  href='#registerModal'
+  type='button'
+>Register</button>
+
+<div
+  class='modal fade'
+  id='loginModal'
+  tabindex='-1'
+  role='dialog'
+  aria-labelledby='exampleModalCenterTitle'
+  aria-hidden='true'
+>
+  <div class='modal-dialog modal-dialog-centered' role='document'>
+    <div class='modal-content'>
+      <div class='modal-header'>
+        <h5 class='modal-title' id='exampleModalLongTitle'>Log in</h5>
+        <button
+          type='button'
+          class='close'
+          data-dismiss='modal'
+          aria-label='Close'
+        >
+          <span aria-hidden='true'>&times;</span>
+        </button>
+      </div>
+
+      <div class='modal-body'>
+        <div class='input-group mb-3'>
+          <span class='input-group-text' id='basic-addon1'>Login</span>
+          <input
+            type='text'
+            class='form-control'
+            placeholder='Email'
+            aria-label='Email'
+            aria-describedby='basic-addon1'
+            id='loginEmail'
+            value='jbartoszek@gmail.com'
+          />
+        </div>
+        <div class='input-group mb-3'>
+          <span class='input-group-text' id='basic-addon1'>Password</span>
+          <input
+            type='text'
+            class='form-control'
+            placeholder='Password'
+            aria-label='Password'
+            aria-describedby='basic-addon1'
+            id='loginPassword'
+            value='eeekubica'
+          />
+        </div>
+      </div>
+      <div class='modal-footer'>
+        <button
+          type='button'
+          class='btn btn-secondary'
+          data-dismiss='modal'
+        >Close</button>
+        <button type='button' class='btn btn-primary' id='loginButton'>Log in</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class='modal fade'
+  id='registerModal'
+  tabindex='-1'
+  role='dialog'
+  aria-labelledby='exampleModalCenterTitle'
+  aria-hidden='true'
+>
+  <div class='modal-dialog modal-dialog-centered' role='document'>
+    <div class='modal-content'>
+      <div class='modal-header'>
+        <h5 class='modal-title' id='exampleModalLongTitle'>Register</h5>
+        <button
+          type='button'
+          class='close'
+          data-dismiss='modal'
+          aria-label='Close'
+        >
+          <span aria-hidden='true'>&times;</span>
+        </button>
+      </div>
+      <div class='modal-body'>
+        <div class='input-group mb-3'>
+          <span class='input-group-text' id='basic-addon1'>Email</span>
+          <input
+            type='text'
+            class='form-control'
+            placeholder='Email'
+            aria-label='Email'
+            aria-describedby='basic-addon1'
+            id='registerEmail'
+            value='jbartoszek@gmail.com'
+          />
+        </div>
+        <div class='input-group mb-3'>
+          <span class='input-group-text' id='basic-addon1'>Password</span>
+          <input
+            type='text'
+            class='form-control'
+            placeholder='Password'
+            aria-label='Password'
+            aria-describedby='basic-addon1'
+            id='registerPassword'
+            value='eeekubica'
+          />
+        </div>
+
+        <div class='input-group mb-3'>
+          <span class='input-group-text' id='basic-addon1'>Repeat password</span>
+          <input
+            type='text'
+            class='form-control'
+            placeholder='Password'
+            aria-label='Password'
+            aria-describedby='basic-addon1'
+            id='registerPassword2'
+            value='eeekubica'
+          />
+        </div>
+
+        <div class='input-group mb-3'>
+          <span class='input-group-text' id='basic-addon1'>First Name</span>
+          <input
+            type='text'
+            class='form-control'
+            placeholder='First Name'
+            aria-label='First Name'
+            aria-describedby='basic-addon1'
+            id='registerFirstName'
+            value='jakub'
+          />
+        </div>
+
+        <div class='input-group mb-3'>
+          <span class='input-group-text' id='basic-addon1'>Last Name</span>
+          <input
+            type='text'
+            class='form-control'
+            placeholder='Last Name'
+            aria-label='Last Name'
+            aria-describedby='basic-addon1'
+            id='registerLastName'
+            value='bartoszek'
+          />
+        </div>
+
+      </div>
+      <div class='modal-footer'>
+        <button
+          type='button'
+          class='btn btn-secondary'
+          data-dismiss='modal'
+        >Close</button>
+        <button
+          type='button'
+          class='btn btn-primary'
+          id='registerButton'
+        >Register</button>
+      </div>
+    </div>
+  </div>
+</div>

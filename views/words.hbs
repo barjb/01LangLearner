@@ -1,0 +1,24 @@
+<button type='button' class='btn btn-primary' id='testButton'>Start Learning</button>
+
+<table class='table'>
+  <thead>
+    <tr>
+      <th scope='col'>#</th>
+      <th scope='col'>Foreign</th>
+      <th scope='col'>English</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each words}}
+      {{#each this}}
+        {{#if position}}
+          <tr>
+            <td scope='row'>{{position}}</td>
+            <td>{{foreign}}</td>
+            <td>{{english}}</td>
+          </tr>
+        {{/if}}
+      {{/each}}
+    {{/each}}
+  </tbody>
+</table>
